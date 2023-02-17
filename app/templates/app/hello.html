@@ -1,0 +1,21 @@
+<h1>Hello world!!!!!!!!!!</h1>
+    <br>
+
+   My name is {{name1}} {{name2}}
+   <br>
+   {% if is_authenticated %}
+        My age is {{ age }}  
+   {% endif %}
+   <br>
+   My friend is {{ names_list.0 }}
+   <br>
+   {{ temp.x }}
+   <br>
+   {{ temp.x|add:'2' }}
+   <br>
+
+
+   {% for name in names %}
+   {{ name }} {{ name | length }} {{ 2 }} <br>
+    {% endfor %}
+

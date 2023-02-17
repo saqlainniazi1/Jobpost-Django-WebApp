@@ -1,0 +1,10 @@
+
+<ul>
+    {% for job in jobs %}
+    <li>
+        {% comment %} <a href="job/{{ forloop.counter0 }}"><h1>{{ job }}</h1></a> {% endcomment %}
+        <a href="{% url 'job_detail' job.id %}">
+            <h1>{{ job.title }}</h1></a>
+    </li>
+    {% endfor %}
+</ul>
